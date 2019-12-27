@@ -1,0 +1,347 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: sans-serif;
+}
+a{
+  text-decoration: none;
+  color: #2196F3;
+  transition: all .2s ease-in-out;
+}
+a:hover{
+  color: red;
+}
+/* //////////////////////Header///////////////////////////////////////// */
+header {
+  background-color: #3b5998;
+  padding: 15px;
+}
+header a {
+  color: white;
+  text-decoration: none;
+}
+header .logo-area {
+  color: white;
+  display: inline-block;
+  width: 13%;
+}
+header .logo-area a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+header .menu, 
+header .icon-links, 
+header .search-area,
+header .privacy,
+header .icon-links .quick-options {
+  display: inline-block;
+}
+header .menu {
+  width: 20%;
+  border-right: 3px solid rgb(73, 101, 159);
+  font-size: 14px;
+  font-weight: 700;
+}
+header .menu a {
+  margin-right: 10px;
+}
+header .icon-links {
+  width: 20%;
+  padding-left: 40px;
+}
+header .icon-links ul li {
+  margin-right: 9px;
+}
+header .icon-links .quick-options{
+  border-right: 3px solid rgb(73, 101, 159);
+  padding-right: 40px;
+}
+header .icon-links .privacy {
+  padding-left: 40px;
+}
+header .search-area {
+  text-align: right;
+  width: 40%;
+}
+header .menu ul li, 
+header .icon-links ul li, 
+header .search-area ul li,
+header .privacy{
+  display: inline-block;
+}
+/* ///////////////////// Top Content ///////////////////////////////  */
+#top-area {
+  padding: 200px 15px 90px 50px;
+  background: url(https://api.timeforkids.com/wp-content/uploads/2019/09/final-cover-forest.jpg)
+   center bottom;
+}
+#top-area .profile-info .user-img {
+  padding: 10px;
+  display: inline-block;
+}
+#top-area .profile-info .user-img img {
+  border-radius: 50%;
+}
+#top-area .profile-info .user-details {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 20px;
+}
+#top-area .profile-info .user-details h3 {
+  color: white;
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: 40px;
+  margin-bottom: 10px;;
+}
+#top-area .profile-info .user-details a {
+  display: inline-block;
+  width: 45%;
+  margin-right: 5%;
+  margin-left: -4px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 10px;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: rgba(255,255,2555, .3);
+  transition: background-color .4s ease-in-out;
+}
+#top-area .profile-info .user-details a:hover{
+  background-color: #2196F3;
+}
+/* ////////////////// Content Area /////////////////////////// */
+#content-area{
+  background-color: #FAFAFA;
+  /* overflow: hidden; */
+  padding: 50px 0;
+}
+#content-area .side-column{
+  float: left;
+  width: 35%;
+  margin: 0 2.5%;
+  max-width: 380px;
+}
+#content-area .widget-box{
+  background-color: white;
+  padding: 15px;
+  margin: 0 0 15px 0;
+  border-radius: 3px;
+  overflow: auto;
+  box-shadow: 0px 2px 5px -1px rgba(138,138,138, 1);
+}
+#content-area .widget-box .head .widget-container{
+  display: inline-block;
+}
+#content-area .widget-box .head .widget-icon{
+  background-color: #BFBFBF;
+  color: white;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#content-area .widget-box .head .widget-icon .fas{
+  max-width: 50%;
+  font-size: 22px;
+}
+#content-area .widget-box .head .widget-title{
+  display: inline-block;
+  padding-left: 15px;
+}
+#content-area .widget-box .body{
+  padding: 20px 0;
+}
+#content-area .main-area{
+  float: left;
+  width: 55%;
+  margin: 0 2.5%;
+  margin-top: -90px;
+}
+#content-area .main-area .widget-box.submenu{
+  padding: 15px 15px 0 15px;
+  margin-bottom: 20px;
+}
+#content-area .main-area .submenu ul{
+  padding: 0;
+}
+#content-area .main-area .submenu ul li{
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-left: -4px;
+  border-bottom: 3px solid #fff;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+#content-area .main-area .submenu ul li:nth-last-child(1){
+  vertical-align: top;
+  padding-top: 12px;
+}
+#content-area .main-area .submenu ul li:hover{
+  border-bottom: 3px solid #2196F3;
+  color: #2196F3;
+}
+#content-area .main-area .submenu ul li .fas{
+  font-size: 20px;
+}
+#content-area .main-area .submenu ul li span{
+  display: block;
+  margin: 15px 0 0 0;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+#content-area .main-area .widget-box.post {
+  overflow: auto;
+}
+#content-area .main-area .widget-box.post .head{
+  margin: 0 0 15px 0;
+}
+#content-area .main-area .widget-box.post .head .user-user-img{
+  width: 8%;
+  overflow: auto;
+  float: left;
+}
+#content-area .main-area .widget-box.post .head .user-img{
+  float: left;
+  background: url(https://randomuser.me/api/portraits/women/42.jpg);
+   height: 40px;
+   width: 40px;
+   background-size: 100%;
+   margin: 0;
+   border-radius: 50%;
+}
+#content-area .main-area .widget-box.post .head .post-info{
+  float: left;
+  width: 92%;
+}
+#content-area .main-area .widget-box.post .head::after{
+  content: '';
+  clear: both;
+  display: table;
+}
+#content-area .main-area .widget-box.post .head .post-info .user-info{
+  display: block;
+  font-size: 14px;
+  margin: 4px 0 6px 0;
+}
+#content-area .main-area .widget-box.post .head .post-info .post-date{
+  display: block;
+  font-size: 12px;
+  color: #ABABAB;
+}
+#content-area .main-area .widget-box.post .body{
+  padding: 0;
+}
+#content-area .main-area .widget-box.post .body .post-img img{
+  width: 100%;
+}
+#content-area .main-area .widget-box.post .body .top-icons{
+  width: 100%;
+  padding: 15px 0;
+  color: #C2C2C2;
+}
+#content-area .main-area .widget-box.post .body .top-icons .fas{
+  font-size: 20px;
+}
+#content-area .main-area .widget-box.post .body .top-icons .fa-thumbs-up{
+  margin-right: 15px;
+}
+#content-area .main-area .widget-box.post .body .top-icons span{
+  float: right;
+}
+#content-area .main-area .widget-box.post .body .post-comments{
+  background-color: #E0E0E0;
+}
+#content-area .main-area .widget-box.post .body .post-comments .user-img{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  float: left;
+}
+#content-area .main-area .widget-box.post .body .post-comments::after{
+  content: ' ';
+  clear: both;
+  display: table;
+} 
+#content-area .main-area .widget-box.post .body .post-comments .user-comment{
+  float: left;
+  width: 92%;
+  font-size: 14px;
+}
+#content-area .main-area .widget-box.post .body .post-comments .user-comment .user-info{
+  margin: 5px 0 10px 0;
+}
+#content-area .main-area .widget-box.post .body .post-comments .user-comment .user-info .time{
+  float: right;
+  color: #999999;
+}
+
+
+
+
+
+
+
+
+
+
+
+#content-area .main-area .widget-box.post .body .post-form{
+  padding: 15px 0 0 0;
+}
+#content-area .main-area .widget-box.post .body .post-form .user-img{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  float: left;
+}
+#content-area .main-area .widget-box.post .body .post-form::after{
+  content: ' ';
+  clear: both;
+  display: table;
+}
+#content-area .main-area .widget-box.post .body .post-form .form-info{
+  float: left;
+  width: 92%;
+  font-size: 14px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ABABAB;
+}
+#content-area .main-area .widget-box.post .body .post-form .form-info input{
+  width: 80%;
+  border: 0 solid #fff;
+  outline: none;
+  font-size: 18px;
+}
+#content-area .main-area .widget-box.post .body .post-form .form-info input::active{
+}
+#content-area .main-area .widget-box.post .body .post-form .form-info .icons{
+  float: right;
+}
+#content-area .main-area .widget-box.post .body .post-form .form-info .icons .fas{
+  font-size: 20px;
+  margin: 0 15px 0 0;
+}
+
+#content-area .main-area .widget-box.post .body .post-form .user-img{
+  width: 8;
+  border-radius: 50%;
+  overflow: hidden;
+  float: left;
+} 
+#content-area .main-area .widget-box.post .body .post-comments .user-img img{
+  width: 100%;
+}
+#content-area .main-area .widget-box.post .body .post-form .user-img img{
+  width: 100%;
+}
